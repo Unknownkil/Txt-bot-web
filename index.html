@@ -70,7 +70,8 @@
             formData.append('file', fileInput);
             formData.append('telegramID', telegramID);
 
-            const response = await fetch('https://text-uk-apo-bot.vercel.app//send-to-telegram', {
+            // Vercel API URL (replace with your hosted Vercel API URL)
+            const response = await fetch('https://text-uk-apo-bot.vercel.app/send-to-telegram', {
                 method: 'POST',
                 body: formData
             });
